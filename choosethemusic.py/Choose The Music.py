@@ -21,7 +21,7 @@ def menu():
     x = int(input('Song: '))
 
     
-    mixer.music.load(songs[x])
+    mixer.music.load(songs[x - 1])
     songplay = str(input('Looped? y/n '))
     if songplay == 'y':
         print('Playing')
